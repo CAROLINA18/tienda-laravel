@@ -37,6 +37,7 @@ Vue.component('product-card-component', require('./components/products/ProductCa
 Vue.component('add-product-btn', require('./components/products/AddToCartComponent.vue').default);
 Vue.component('product-counter-component', require('./components/shopping_cart/CounterComponent.vue').default);
 Vue.component('product-shopping-component', require('./components/shopping_cart/ProductsShoppingCartComponent.vue').default);
+Vue.component('procces-pay-component', require('./components/shopping_cart/ProccesPayComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

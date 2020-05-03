@@ -8,6 +8,7 @@
         </header>
         <div class ="card-body">
             <product-shopping-component></product-shopping-component>
+            <procces-pay-component></procces-pay-component>
         </div>
     </div>
 </div>
