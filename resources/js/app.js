@@ -7,6 +7,18 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+const Vuex = require('vuex');
+window.store = new Vuex.Store({
+    state:{
+        productsCount: 0
+    },
+    mutations:{
+      increment(state){
+        return state.productsCount++
+      }
+    }
+
+})
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +32,11 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('products-component', require('./components/products/ProductsComponents.vue').default);
+Vue.component('product-card-component', require('./components/products/ProductCardComponent.vue').default);
+Vue.component('add-product-btn', require('./components/products/AddToCartComponent.vue').default);
+Vue.component('product-counter-component', require('./components/shopping_cart/CounterComponent.vue').default);
+Vue.component('product-shopping-component', require('./components/shopping_cart/ProductsShoppingCartComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
