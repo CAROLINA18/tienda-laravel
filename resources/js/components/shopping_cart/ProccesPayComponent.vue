@@ -5,7 +5,7 @@
     export default {
         data(){
             return{ message:'Procesar Pago',
-            endpoint:'https://secure.placetopay.com/redirection/api/session/'
+            endpoint:'https://test.placetopay.com/redirection/api/session/'
         }},
 
 
@@ -17,7 +17,7 @@
                        tranKey: '024h1IlD'
 
                 };
-                axios.post("https://secure.placetopay.com/redirection/api/session/", post).then((result) => {
+                axios.post("https://test.placetopay.com/redirection/api/session/", post).then((result) => {
 
                     console.log(result);
                 });

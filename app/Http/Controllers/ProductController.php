@@ -10,7 +10,7 @@ class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     *Funcion Index que muestra la lista de productos disponibles por medio de una salida json y los pagina
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
@@ -26,7 +26,7 @@ class ProductController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     *Funcion create que sirve para permitir crear nuevos productos y retorna la vista del formulario para creacion
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -37,7 +37,8 @@ class ProductController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     *Funcion store recibe todos los parametros que entran por el formulario para crear un nuevo producto si la creacion
+     *es exitosa redirige hacia el home de productos si no redirige hacia el formulario de creacion de productos
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -60,7 +61,7 @@ class ProductController extends Controller
 
     /**
      * Display the specified resource.
-     *
+     *La funcion show muestra el producto segun el id seleccionado
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -73,7 +74,7 @@ class ProductController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     *La funcion edit permite traer todos los valores del producto a modificar segun el id seleccionado.
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -85,7 +86,8 @@ class ProductController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     *La funcion update recoge todos los parametros ingresados en el formulario de edicion y realiza una actualizacion
+     *de la informacion del producto si la actualizacion es exitosa redirige al home de productos , si no redirige al formulario de edicion.
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -108,7 +110,7 @@ class ProductController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     *La funcion destroy elimina el producto segun el id seleccionado.
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */

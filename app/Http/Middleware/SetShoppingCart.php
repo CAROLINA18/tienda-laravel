@@ -8,7 +8,8 @@ class SetShoppingCart
 {
     /**
      * Handle an incoming request.
-     *
+     * Esta funcion es la que le da manejo a las sesiones del carrito de compras matiene el carrito si la sesion existe
+     * si no hay sesion permite crear un nuevo carrito de compras.
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
      * @return mixed

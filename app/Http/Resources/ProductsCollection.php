@@ -8,7 +8,8 @@ class ProductsCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
-     *
+     *Esta funcion permite traer todos los datos de un producto en forma de arreglo para poder acceder a los elementos
+     *mas facilmente.
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
