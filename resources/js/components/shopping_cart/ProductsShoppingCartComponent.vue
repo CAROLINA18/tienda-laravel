@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-2">
                     <strong>{{product.humanPrice}}</strong>
-                    <strong>{{total}}</strong>
+
                 </div>
               </div>
             </article>
@@ -17,10 +17,10 @@
         <article class = "total card-product">
               <div class="row">
                 <div class="col-10">
-                    <strong>Total</strong>
+
                 </div>
                 <div class="col-2">
-                    <strong>{{total}}</strong>
+
                 </div>
               </div>
         </article>
@@ -40,6 +40,7 @@
        },
        computed:{
             total(){
+
                let cents = this.products.reduce((acumulator,currentObj)=>{
 
                   return acumulator + currentObj.numberPrice

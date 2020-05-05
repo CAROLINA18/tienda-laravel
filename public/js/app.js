@@ -38093,24 +38093,14 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-2" }, [
-                  _c("strong", [_vm._v(_vm._s(product.humanPrice))]),
-                  _vm._v(" "),
-                  _c("strong", [_vm._v(_vm._s(_vm.total))])
+                  _c("strong", [_vm._v(_vm._s(product.humanPrice))])
                 ])
               ])
             ]
           )
         }),
         _vm._v(" "),
-        _c("article", { staticClass: "total card-product" }, [
-          _c("div", { staticClass: "row" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-2" }, [
-              _c("strong", [_vm._v(_vm._s(_vm.total))])
-            ])
-          ])
-        ])
+        _vm._m(0)
       ],
       2
     )
@@ -38121,8 +38111,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-10" }, [
-      _c("strong", [_vm._v("Total")])
+    return _c("article", { staticClass: "total card-product" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-10" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-2" })
+      ])
     ])
   }
 ]
@@ -51913,14 +51907,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************************************!*\
   !*** ./resources/js/components/shopping_cart/ProductsShoppingCartComponent.vue ***!
   \*********************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductsShoppingCartComponent_vue_vue_type_template_id_55d4bfc4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductsShoppingCartComponent.vue?vue&type=template&id=55d4bfc4& */ "./resources/js/components/shopping_cart/ProductsShoppingCartComponent.vue?vue&type=template&id=55d4bfc4&");
 /* harmony import */ var _ProductsShoppingCartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductsShoppingCartComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/shopping_cart/ProductsShoppingCartComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ProductsShoppingCartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ProductsShoppingCartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -51950,7 +51945,7 @@ component.options.__file = "resources/js/components/shopping_cart/ProductsShoppi
 /*!**********************************************************************************************************!*\
   !*** ./resources/js/components/shopping_cart/ProductsShoppingCartComponent.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
